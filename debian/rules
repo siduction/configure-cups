@@ -1,0 +1,29 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+create-icons:
+	# requires inkscape and imagemagick to be installed
+	@if [ ! -x /usr/bin/convert ]; then \
+		echo "ERROR: imagemagick not installed!" ; \
+		false ; \
+	fi
+	@if [ ! -x /usr/bin/inkscape ]; then \
+		echo "ERROR: inkscape not installed!" ; \
+		false ; \
+	fi
+	
+	for f in configure-cups; do \
+		[ -r  $(CURDIR)/icons/$${f}.svg ] || false ; \
+		for i in 16 22 32 48 64 128; do \
+			mkdir -p "icons/hicolor.$${f}/$${i}x$${i}/apps" ; \
+			inkscape --export-width=$${i} \
+				 --export-height=$${i} \
+				 --export-png="$(CURDIR)/icons/hicolor.$${f}/$${i}x$${i}/apps/$${f}.png" \
+					$(CURDIR)/icons/$${f}.svg ; \
+		done ; \
+		mkdir -p "icons/pixmaps.$${f}" ; \
+		convert icons/hicolor.$${f}/32x32/apps/$${f}.png icons/pixmaps.$${f}/$${f}.xpm ; \
+		convert icons/hicolor.$${f}/16x16/apps/$${f}.png icons/pixmaps.$${f}/$${f}-16.xpm ; \
+	done

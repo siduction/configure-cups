@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=su-to-root -X -c /usr/sbin/configure-cups
+Icon=configure-cups
+Name=configure-cups
+GenericName=set up printer(s)
+GenericName[de]=Druckerkonfiguration
+GenericName[pt]=Configuração de impressora
+Categories=Settings;

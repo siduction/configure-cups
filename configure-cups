@@ -1,0 +1,47 @@
+#!/bin/sh
+# cupsconfig - Start and configure cups
+# (C) Klaus Knopper Jun 2001
+# (C) 2004-2010 Stefan Lippers-Hollmann <s.l-h@gmx.de>
+
+if [ "$(id -u)" -ne 0 ]; then
+	[ -x "$(which su-to-root)" ] && exec su-to-root -X -c "$0" "$@"
+	printf "ERROR: $0 needs root capabilities, please start it as root\n\n" >&2
+	exit 1
+fi
+
+# CUPS not installed
+[ -x /etc/init.d/cups ] || exit 2
+
+# CUPS not running, start it
+if [ -z "$(pidof cupsd)" ]; then
+	invoke-rc.d cups start
+	sleep 4
+fi
+
+for i in $(seq 1 20); do
+	sleep 2
+
+	if lpstat -r; then
+		update-rc.d cups start 50 2 3 4 5 . stop 80 1 .
+		if [ -x /usr/bin/gnome-cups-manager ] ; then
+			[ -n "$DISPLAY" ] && exec gnome-cups-manager
+		else
+			[ -n "$DISPLAY" ] && exec x-www-browser "http://localhost:631"
+			[ -z "$DISPLAY" ] && exec   www-browser "http://localhost:631"
+		fi 
+		break
+	else
+		case "$LANG" in
+			es*)
+				[ -n "$DISPLAY" ] && [ -x /usr/bin/xmessage ] && exec xmessage '¡No puedo arrancar el servidor CUPS!'
+				echo '¡No puedo arrancar el servidor CUPS!' 1>&2
+				exit 3
+				;;
+			*)
+				[ -n "$DISPLAY" ] && [ -x /usr/bin/xmessage ] && exec xmessage 'Cannot start CUPS server!'
+				echo 'Cannot start CUPS server!' 1>&2
+				exit 3
+				;;
+		esac
+	fi
+done

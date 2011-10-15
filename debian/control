@@ -1,0 +1,24 @@
+Source: configure-cups
+Section: net
+Priority: optional
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+ Ferdinand Thommes <devil@siduction.org>
+Uploaders: Joaquim Boura <x-un-i@berlios.de>
+ Ferdinand Thommes <devil@siduction.org>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.2
+Vcs-Svn:
+Vcs-Browser: http://git.siduction.org/packages/siduction-repository/configure-cups/
+Package: configure-cups
+Architecture: all
+Depends: ${misc:Depends},
+ cups,
+ cups-client
+Recommends: x11-utils,
+ menu
+Description: Minimalistic cups configuration script
+ Configuration wizzard for printing needs, it starts CUPS as needed and runs
+ their respective configuration methods.
+ .
+ This is equivalent to 'x-www-browser "http://localhost:631"' and (re-)starting
+ CUPS.

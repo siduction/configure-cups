@@ -1,0 +1,5 @@
+configure-cups			usr/sbin/
+configure-cups.desktop		usr/share/applications/siduction/
+icons/configure-cups.svg	usr/share/icons/hicolor/scalable/apps/
+icons/hicolor.configure-cups/*	usr/share/icons/hicolor/
+icons/pixmaps.configure-cups/*	usr/share/pixmaps/
