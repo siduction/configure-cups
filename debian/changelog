@@ -1,6 +1,6 @@
-configure-cups (0.8.9) UNRELEASED; urgency=low
+configure-cups (0.9.0); urgency=low
 
-  * NOT RELEASED YET
+    * bumped version
 
  -- Ferdinand Thommes <devil@siduction.org>  Sat, 15. Oct 2011 13:29:43
 
