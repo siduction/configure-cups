@@ -1,9 +1,9 @@
-configure-cups (0.8.9+nmu3) UNRELEASED; urgency=low
+configure-cups (0.8.9+nmu3) unstable; urgency=low
 
   * Non-maintainer upload.
   * First Build
 
- -- Alf Gaida <info@g-com.eu>  Thu, 24 Nov 2011 14:37:59 +0100
+ -- Alf Gaida <info@g-com.eu>  Thu, 24 Nov 2011 14:47:09 +0100
 
 configure-cups (0.8.9+nmu2) UNRELEASED; urgency=low
 
