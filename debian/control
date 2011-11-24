@@ -5,7 +5,7 @@ Maintainer: Ferdinand Thommes <devil@siduction.org>
 XSBC-Original-Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 8)
 Standards-Version: 3.9.2
-Vcs-Git: git://git.siduction.org/packages/siduction-repository/configure-cups.git
+Vcs-Git: git://git.siduction.org/packages/siduction-repository/configure-cups
 Vcs-Browser: http://git.siduction.org/?p=packages/siduction-repository/configure-cups.git
 Homepage: http://svn.berlios.de/wsvn/fullstory/configure-cups/
 
