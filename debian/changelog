@@ -1,8 +1,15 @@
+configure-cups (0.8.9+nmu3) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * First Build
+
+ -- Alf Gaida <info@g-com.eu>  Thu, 24 Nov 2011 14:37:59 +0100
+
 configure-cups (0.8.9+nmu2) UNRELEASED; urgency=low
 
   [ Alf Gaida ]
   * Non-maintainer upload.
-  * fixes #243 - cunfigure-cops ./debian
+  * fixes #243 - configure-cups ./debian
 
   [ Ferdinand Thommes ]
   * removed uploaders field
