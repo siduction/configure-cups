@@ -6,8 +6,9 @@ configure-cups (0.8.9+nmu2) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * removed uploaders field
+  * fixed copyright
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 26 Oct 2011 07:02:37 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Thu, 24 Nov 2011 14:49:28 +0100
 
 configure-cups (0.8.9+nmu1) UNRELEASED; urgency=low
 
