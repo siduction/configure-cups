@@ -1,8 +1,10 @@
-configure-cups (0.8.14) unstable; urgency=low
+configure-cups (0.8.10) unstable; urgency=low
 
   * bump compat to 9
   * bump Standards to 3.9.3
-  * dependenciy debhelper (>=9) 
+  * dependenciy debhelper (>=9)
+  * some modifications in copyright, preparing dep 5
+  * added uk and russian Language, thanks to polix
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 26 Feb 2012 15:11:39 +0100
 
