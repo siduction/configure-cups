@@ -1,2 +1,7 @@
-debian/configure-cups*
 debian/files
+debian/configure-cups.debhelper.log
+debian/configure-cups.postinst.debhelper
+debian/configure-cups.postrm.debhelper
+debian/configure-cups.substvars
+debian/configure-cups/
+

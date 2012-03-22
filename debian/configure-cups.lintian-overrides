@@ -1,0 +1,4 @@
+# stop lintian complaining about a missed manpage
+# this manpage will never ever be written
+configure-cups: binary-without-manpage usr/sbin/configure-cups
+

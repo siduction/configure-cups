@@ -1,3 +1,14 @@
+configure-cups (0.8.11) unstable; urgency=low
+
+  * .gitignore modified
+  * source override to prevent lintian complaining about 
+    XBSC-Original-Maintainer
+  * configure-cups override to prevent lintian complainig about  
+    binary-without-manpage usr/sbin/configure-cups
+  * fixes #639 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 22 Mar 2012 12:31:37 +0100
+
 configure-cups (0.8.10) unstable; urgency=low
 
   * bump compat to 9
