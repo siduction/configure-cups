@@ -1,3 +1,11 @@
+configure-cups (0.8.12) unstable; urgency=low
+
+  * add creativecommons3 to dependencies
+  * debian/copyright modified to be dep5 conform
+  * refs #313
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 24 Mar 2012 11:18:48 +0100
+
 configure-cups (0.8.11) unstable; urgency=low
 
   * .gitignore modified

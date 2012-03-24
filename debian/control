@@ -14,7 +14,8 @@ Package: configure-cups
 Architecture: all
 Depends: ${misc:Depends},
  cups,
- cups-client
+ cups-client,
+ creativecommons3
 Recommends: x11-utils,
  menu
 Description: Minimalistic cups configuration script
