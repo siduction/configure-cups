@@ -3,7 +3,14 @@ Upstream-Name: configure-cups
 Source: <http://svn.berlios.de/svnroot/repos/fullstory/configure-cups/trunk/>
 
 Files: *
-Copyright: 2011-2012 Ferdinand Thommes <devil@siduction.org>
+Copyright: 2004-2010 Stefan Lippers-Hollmann <s.l-h@gmx.de>
+           2001-2005 Klaus Knopper <knoppix@knopper.net>
+License: GPL-2
+
+
+Files: debian/*   
+Copyright: 2011-2012 Alf Gaida <agaida@siduction.org>
+           2011-2012 Ferdinand Thommes <devil@siduction.org>
            2004-2010 Stefan Lippers-Hollmann <s.l-h@gmx.de>
            2001-2005 Klaus Knopper <knoppix@knopper.net>
 License: GPL-2
@@ -19,7 +26,6 @@ Copyright: 2011-2012 Sven Strohmeier <se7enelven@siduction.net>
                 2007 David Miller <miller@oxygen-icons.org>
 License: CC-BY-SA-3.0,
          LGPL-2+
- 
 
 License: GPL-2
  This package is free software; you can redistribute it and/or modify
@@ -36,7 +42,6 @@ License: GPL-2
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
-
 
 License: LGPL-2+
  configure-cups.svg also includes elements from The Oxygen Icon Theme.
