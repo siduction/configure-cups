@@ -1,6 +1,6 @@
-Format: http://dep.debian.net/deps/dep5
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: configure-cups
-Source: <http://svn.berlios.de/svnroot/repos/fullstory/configure-cups/trunk/>
+Source: git://git.siduction.org/code/configure-cups
 
 Files: *
 Copyright: 2004-2010 Stefan Lippers-Hollmann <s.l-h@gmx.de>
@@ -9,7 +9,7 @@ License: GPL-2
 
 
 Files: debian/*   
-Copyright: 2011-2012 Alf Gaida <agaida@siduction.org>
+Copyright: 2011-2013 Alf Gaida <agaida@siduction.org>
            2011-2012 Ferdinand Thommes <devil@siduction.org>
            2004-2010 Stefan Lippers-Hollmann <s.l-h@gmx.de>
            2001-2005 Klaus Knopper <knoppix@knopper.net>

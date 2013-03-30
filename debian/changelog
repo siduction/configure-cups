@@ -1,3 +1,15 @@
+configure-cups (0.8.14) unstable; urgency=low
+
+  * Standards: 3.9.4
+  * removed XSBC-Original-Maintainer
+  * removed source.lintian-overrides 
+  * new copyright format
+  * sources fixed 
+  * homepage removed
+  * refs #1103
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 30 Mar 2013 15:58:50 +0100
+
 configure-cups (0.8.13) unstable; urgency=low
 
   * final changes dep5
