@@ -1,3 +1,9 @@
+configure-cups (0.8.15) unstable; urgency=low
+
+  * changed configure-cups.menu to show icon under fluxbox menu
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 12 Oct 2014 23:22:08 +0300
+
 configure-cups (0.8.14) unstable; urgency=low
 
   * Standards: 3.9.4
