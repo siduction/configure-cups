@@ -1,7 +1,19 @@
 #!/bin/sh
+
 # cupsconfig - Start and configure cups
-# (C) Klaus Knopper Jun 2001
-# (C) 2004-2012 Stefan Lippers-Hollmann <s.l-h@gmx.de>
+
+# Copyright (C) 2001, Klaus Knopper
+# Copyright (C) 2004-2015, Stefan Lippers-Hollmann <s.l-h@gmx.de>
+
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License
+# as published by the Free Software Foundation; version 2 of the
+# License.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
 
 if [ "$(id -u)" -ne 0 ]; then
 	[ -x "$(which su-to-root)" ] && exec su-to-root -X -c "$0" "$@"
@@ -14,7 +26,7 @@ fi
 
 # CUPS not running, start it
 if [ -z "$(pidof cupsd)" ]; then
-	invoke-rc.d cups start
+	service cups start
 	sleep 4
 fi
 
@@ -22,13 +34,13 @@ for i in $(seq 1 20); do
 	sleep 2
 
 	if lpstat -r; then
-		update-rc.d cups start 50 2 3 4 5 . stop 80 1 .
+		update-rc.d cups defaults
 		if [ -x /usr/bin/gnome-cups-manager ] ; then
 			[ -n "$DISPLAY" ] && exec gnome-cups-manager
 		else
 			[ -n "$DISPLAY" ] && exec x-www-browser "http://localhost:631"
 			[ -z "$DISPLAY" ] && exec   www-browser "http://localhost:631"
-		fi
+		fi 
 		break
 	else
 		case "$LANG" in

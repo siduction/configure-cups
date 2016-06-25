@@ -1,19 +1,19 @@
 Source: configure-cups
 Section: net
 Priority: optional
-Maintainer: Ferdinand Thommes <devil@siduction.org>
-Uploaders: Alf Gaida <agaida@siduction.org>
-Build-Depends: debhelper (>= 9)
-Standards-Version: 3.9.4
-Vcs-Git: git://git.siduction.org/packages/siduction-repository/configure-cups
-Vcs-Browser: http://git.siduction.org/?p=packages/siduction-repository/configure-cups.git
+Maintainer: Stefan Lippers-Hollmann <s.l-h@gmx.de>
+Uploaders: Joaquim Boura <x-un-i@sapo.pt>,
+           Alf Gaida <agaida@siduction.org>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.8
+Vcs-git: git://github.com/fullstory/configure-cups.git
+Vcs-Browser: https://github.com/fullstory/configure-cups
 
 Package: configure-cups
 Architecture: all
 Depends: ${misc:Depends},
  cups,
- cups-client,
- creativecommons3
+ cups-client
 Recommends: x11-utils,
  menu
 Description: Minimalistic cups configuration script

@@ -1,82 +1,88 @@
+configure-cups (0.8.20) unstable; urgency=medium
+
+  [ Stefan Lippers-Hollmann ]
+  * NOT RELEASED YET
+
+  [ Alf Gaida ]
+  * Bump standards to 3.9.8, no changes needed
+  * full back to upstream, exluding icons 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 25 Jun 2016 18:41:32 +0200
+
+configure-cups (0.8.19) unstable; urgency=medium
+
+  * use parallel building.
+  * apply the CTTE decision and remove support for the obsolete "Debian Menu
+    System" (#741573).
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 02 Sep 2015 20:35:26 +0200
+
+configure-cups (0.8.18) unstable; urgency=medium
+
+  * move configure-cups manpage to section 8.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 04 Jan 2015 01:51:54 +0100
+
+configure-cups (0.8.17) unstable; urgency=medium
+
+  * bump standards version to 3.9.6, no changes necessary.
+  * convert to machine readable copyright.
+  * add explicit license header to binary.
+  * use service instead of invoke-rc.d.
+  * add a simple manpage.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 03 Jan 2015 18:53:38 +0100
+
+configure-cups (0.8.16) unstable; urgency=low
+
+  * bump standards version to 3.9.5, no changes necessary.
+  * debian/control: switch Vcs tags to github.
+  * refresh icons.
+  * add Keywords entry to the XDG menu file.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 13 Apr 2014 21:16:00 +0200
+
+configure-cups (0.8.15) unstable; urgency=low
+
+  * switch cups service invocation to defaults.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 03 Nov 2013 15:09:15 +0100
+
 configure-cups (0.8.14) unstable; urgency=low
 
-  * Standards: 3.9.4
-  * removed XSBC-Original-Maintainer
-  * removed source.lintian-overrides 
-  * new copyright format
-  * sources fixed 
-  * homepage removed
-  * refs #1103
+  * bump standards version to 3.9.4, no changes necessary.
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 30 Mar 2013 15:58:50 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 12 Jan 2013 01:23:41 +0100
 
 configure-cups (0.8.13) unstable; urgency=low
 
-  * final changes dep5
-  * fixes #313 
+  * bump standards version to 3.9.3, no changes necessary.
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 03 Apr 2012 17:34:19 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 23 Feb 2012 15:50:49 +0100
 
 configure-cups (0.8.12) unstable; urgency=low
 
-  * add creativecommons3 to dependencies
-  * debian/copyright modified to be dep5 conform
-  * refs #313
+  * update icons.
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 24 Mar 2012 11:18:48 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jan 2012 03:42:31 +0100
 
 configure-cups (0.8.11) unstable; urgency=low
 
-  * .gitignore modified
-  * source override to prevent lintian complaining about 
-    XBSC-Original-Maintainer
-  * configure-cups override to prevent lintian complainig about  
-    binary-without-manpage usr/sbin/configure-cups
-  * fixes #639 
+  * switch to compat level 9.
 
- -- Alf Gaida <agaida@siduction.org>  Thu, 22 Mar 2012 12:31:37 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 16 Jan 2012 00:39:32 +0100
 
 configure-cups (0.8.10) unstable; urgency=low
 
-  * bump compat to 9
-  * bump Standards to 3.9.3
-  * dependenciy debhelper (>=9)
-  * some modifications in copyright, preparing dep 5
-  * added uk and russian Language, thanks to polix
+  * drop newly introduced duplicated-key-in-desktop-entry. 
 
- -- Alf Gaida <agaida@siduction.org>  Sun, 26 Feb 2012 15:11:39 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 28 Dec 2011 08:53:16 +0100
 
-configure-cups (0.8.9+nmu3) unstable; urgency=low
+configure-cups (0.8.9) unstable; urgency=low
 
-  * Non-maintainer upload.
-  * First Build
+  * added ukrainian language. thks polix
 
- -- Alf Gaida <info@g-com.eu>  Thu, 24 Nov 2011 14:47:09 +0100
-
-configure-cups (0.8.9+nmu2) UNRELEASED; urgency=low
-
-  [ Alf Gaida ]
-  * Non-maintainer upload.
-  * fixes #243 - configure-cups ./debian
-
-  [ Ferdinand Thommes ]
-  * removed uploaders field
-  * fixed copyright
-
- -- Ferdinand Thommes <devil@siduction.org>  Thu, 24 Nov 2011 14:49:28 +0100
-
-configure-cups (0.8.9+nmu1) UNRELEASED; urgency=low
-
-  * forked for siduction
-  * changed icons to siduction
-
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 15 Oct 2011 13:29:43 +0200
-
-configure-cups (0.8.9) UNRELEASED; urgency=low
-
-  * NOT RELEASED YET
-
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri, 29 Apr 2011 04:06:57 +0200
+ -- Joaquim Boura <x-un-i@sapo.pt>  Tue, 27 Dec 2011 14:04:02 +0100
 
 configure-cups (0.8.8) unstable; urgency=low
 
